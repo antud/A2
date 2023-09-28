@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drawing Area:"
+        android:layout_margin="5pt"
+      />
+
+    <com.example.a2.DrawingAreaA2
+        android:id="@+id/drawing_area_a2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Most Recent Sketches:"
+        android:layout_margin="5pt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5pt">
+        <ImageView
+            android:id="@+id/smallImageOne"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_marginLeft="5pt"
+            />
+        <ImageView
+            android:id="@+id/smallImageTwo"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_marginLeft="5pt"
+            />
+
+        <ImageView
+            android:id="@+id/smallImageThree"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_marginLeft="5pt"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:text="Save"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="1pt"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="1pt"
+        android:onClick="onClear"
+        android:text="Clear" />
+
+<!--    <Button-->
+<!--        android:id="@+id/color"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_margin="1pt"-->
+<!--        android:onClick="changeColor"-->
+<!--        android:text="Change Color" />-->
+
+
+</LinearLayout>
